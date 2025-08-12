@@ -1,4 +1,4 @@
-# Laravel 11 幫助處理語系檔以確保翻譯的一致性和完整性
+# Laravel 12 幫助處理語系檔以確保翻譯的一致性和完整性
 
 引入 bottelet 的 translation-checker 套件來擴增幫助處理語系檔以確保翻譯的一致性和完整性，協助尋找忘記新增至語系檔的翻譯、檢查和維護專案翻譯的工具。
 
@@ -16,6 +16,10 @@ $ composer install
 ```sh
 $ php artisan key:generate
 ```
+- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移。
+```sh
+$ php artisan migrate
+```
 - 執行 __Artisan__ 指令的 __translations:check__ 來檢查、管理和更新翻譯。
 ```sh
 $ php artisan translations:check {語系，例如：zh_TW}
@@ -24,5 +28,5 @@ $ php artisan translations:check {語系，例如：zh_TW}
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/JKQ4shg.png)
+![](https://i.imgur.com/rkFUzgd.png)
 > 確保翻譯的一致性和完整性
